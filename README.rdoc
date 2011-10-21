@@ -1,0 +1,18 @@
+= gantt_date
+
+GanttDateはRedmineのガントチャートに日付を出すと共に、日本の祝日を赤く表示することが出来るRedmineプラグインです。ガントチャートはWeb表示だけでなく、PDFについても同様に対応しています。
+
+= install
+
+Redmineの対応バージョンは1.2.1です。これ以外では検証していません。
+
+Calendar::Japanese::Holidayを利用しますので、以下のコマンドでモジュールをインストールします。
+
+# sudo gem install cal-jp-holiday
+
+redmine_gantt_dateディレクトリをRedmineのプラグインディレクトリに配置します。
+
+%REDMINE_ROOT%/vendor/plugins/redmine_gantt_date
+
+Railsを再起動すれば認識します。
+
